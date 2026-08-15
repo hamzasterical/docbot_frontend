@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Topbar from './components/Topbar';
 import DashboardView from './components/DashboardView';
 import CustomersView from './components/CustomersView';
 import CalendarView from './components/CalendarView';
+import LandingPage from './components/LandingPage';
 
-export default function App() {
+function DashboardApp() {
   const [activePanel, setActivePanel] = useState('dashboard');
 
   const renderActivePanel = () => {
@@ -31,5 +33,17 @@ export default function App() {
         </main>
       </div>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/dashboard" element={<DashboardApp />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
