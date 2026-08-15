@@ -223,6 +223,14 @@ export default function LandingPage() {
             >
               Privacy Policy
             </a>
+            <a
+              href="/terms-of-service.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors"
+            >
+              Terms of Service
+            </a>
           </nav>
 
           {/* Right Action Buttons */}
@@ -310,6 +318,15 @@ export default function LandingPage() {
               className="block text-sm font-medium text-on-surface py-2 hover:text-primary"
             >
               Privacy Policy
+            </a>
+            <a
+              href="/terms-of-service.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-medium text-on-surface py-2 hover:text-primary"
+            >
+              Terms of Service
             </a>
             <div className="pt-2 border-t border-surface-variant flex flex-col gap-2">
               <a
@@ -889,6 +906,7 @@ export default function LandingPage() {
                 <li><a href="#services" className="hover:text-white transition-colors">Treatments &amp; Pricing</a></li>
                 <li><a href="#reviews" className="hover:text-white transition-colors">Patient Testimonials</a></li>
                 <li><a href="/privacy-policy.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                <li><a href="/terms-of-service.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Terms of Service</a></li>
                 <li className="pt-3 border-t border-slate-700/60">
                   {/* Understated Staff Login in Footer */}
                   <Link
@@ -917,6 +935,15 @@ export default function LandingPage() {
                 className="hover:text-slate-300 transition-colors"
               >
                 Privacy Policy
+              </a>
+              <span>•</span>
+              <a
+                href="/terms-of-service.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-slate-300 transition-colors"
+              >
+                Terms of Service
               </a>
               <span>•</span>
               <Link to="/dashboard" className="hover:text-slate-300 transition-colors">
