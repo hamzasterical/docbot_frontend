@@ -1,6 +1,6 @@
 // DocBot Dashboard API Client — Single source of truth for backend calls
 
-const BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
+const BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'https://docbot-quag.onrender.com').replace(/\/+$/, '');
 
 async function request(endpoint, options = {}) {
   const url = `${BASE_URL}${endpoint}`;
