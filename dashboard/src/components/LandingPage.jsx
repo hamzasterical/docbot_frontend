@@ -215,6 +215,14 @@ export default function LandingPage() {
             <a href="#contact" className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors">
               Location &amp; Hours
             </a>
+            <a
+              href="/privacy-policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors"
+            >
+              Privacy Policy
+            </a>
           </nav>
 
           {/* Right Action Buttons */}
@@ -293,6 +301,15 @@ export default function LandingPage() {
               className="block text-sm font-medium text-on-surface py-2 hover:text-primary"
             >
               Location &amp; Hours
+            </a>
+            <a
+              href="/privacy-policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-sm font-medium text-on-surface py-2 hover:text-primary"
+            >
+              Privacy Policy
             </a>
             <div className="pt-2 border-t border-surface-variant flex flex-col gap-2">
               <a
@@ -871,6 +888,7 @@ export default function LandingPage() {
                 <li><a href="#how-it-works" className="hover:text-white transition-colors">How DocBot Works</a></li>
                 <li><a href="#services" className="hover:text-white transition-colors">Treatments &amp; Pricing</a></li>
                 <li><a href="#reviews" className="hover:text-white transition-colors">Patient Testimonials</a></li>
+                <li><a href="/privacy-policy.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Privacy Policy</a></li>
                 <li className="pt-3 border-t border-slate-700/60">
                   {/* Understated Staff Login in Footer */}
                   <Link
@@ -891,6 +909,15 @@ export default function LandingPage() {
             <p>© {new Date().getFullYear()} BrightSmile Dental Studio. All rights reserved.</p>
             <div className="flex items-center gap-4">
               <span>Powered by DocBot WhatsApp AI</span>
+              <span>•</span>
+              <a
+                href="/privacy-policy.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-slate-300 transition-colors"
+              >
+                Privacy Policy
+              </a>
               <span>•</span>
               <Link to="/dashboard" className="hover:text-slate-300 transition-colors">
                 Staff Login

@@ -4,8 +4,11 @@ node_modules/
 
 # Production build outputs
 dist/
+**/dist/
 build/
+**/build/
 .vercel/
+**/.vercel/
 
 # Environment and local files
 .env
